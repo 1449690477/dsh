@@ -7,9 +7,7 @@
 
 ## 效果预览
 
-![实战截图 1](assets/screenshot-1.png)
-
-![实战截图 2](assets/screenshot-2.png)
+![实战截图](assets/screenshot.png)
 
 ## 安装
 
@@ -65,8 +63,7 @@ bash install.sh
 dsh-破限者/
 ├── AGENTS.md                        # 常驻自动层（复制到 ~/.dsh/AGENTS.md）
 ├── assets/
-│   ├── screenshot-1.png             # 实战截图
-│   └── screenshot-2.png
+│   └── screenshot.png               # 实战截图
 ├── install.ps1                      # Windows 一键安装/卸载
 ├── install.sh                       # macOS/Linux 一键安装/卸载
 ├── LICENSE
