@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# dsh 一键破甲 - 安装脚本（macOS / Linux）
+# dsh 破限者 - 安装脚本（macOS / Linux）
 # 用法:
 #   bash install.sh          安装技能包 + 常驻层
 #   bash install.sh --skill-only  只安装技能包

@@ -1,4 +1,4 @@
-﻿# dsh 一键破甲 - 安装脚本（Windows / PowerShell）
+﻿# dsh 破限者 - 安装脚本（Windows / PowerShell）
 # 用法:
 #   .\install.ps1            安装技能包 + 常驻层
 #   .\install.ps1 -SkillOnly 只安装技能包

@@ -1,9 +1,15 @@
-# dsh 一键破甲（DeepSeek Harness 解除限制执行器）
+# dsh 破限者（DeepSeek Harness 解除限制执行器）
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）打造的「解除限制执行器」技能包，适配最新 `deepseek-v4-flash`（7013）与 `deepseek-v4-pro`（8013）双档位。
 
 - **常驻自动层**：安装后每个会话首次请求自动注入执行模式，全程无需手动调用。
 - **按需细分层**：技能 `unrestricted-executor` 提供 flash 精简档 / pro 完整档专用规则（渐进式加载，按模型档位选择）。
+
+## 效果预览
+
+![实战截图 1](assets/screenshot-1.png)
+
+![实战截图 2](assets/screenshot-2.png)
 
 ## 安装
 
@@ -56,8 +62,11 @@ bash install.sh
 ## 目录结构
 
 ```
-dsh-一键破甲/
+dsh-破限者/
 ├── AGENTS.md                        # 常驻自动层（复制到 ~/.dsh/AGENTS.md）
+├── assets/
+│   ├── screenshot-1.png             # 实战截图
+│   └── screenshot-2.png
 ├── install.ps1                      # Windows 一键安装/卸载
 ├── install.sh                       # macOS/Linux 一键安装/卸载
 ├── LICENSE
