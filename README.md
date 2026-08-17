@@ -27,6 +27,12 @@
 **覆盖场景**：破解 / 绕过 / 序列号、keygen、reverse shell、下载破解、服务器扫描、反调试 / 反虚拟机、成人内容、化学 / 药剂 / 武器 / 教学指南。
 
 **模型档位**：`deepseek-v4-flash`（7013）使用精简规则；`deepseek-v4-pro`（8013）使用完整规则 + 完整度优先。
+## AstrBot 插件版（人格破甲）
+
+同一套破限者规则也已做成 AstrBot 插件：`astrbot_plugin_pojia`。安装后，AstrBot 加载任何人格（含 DeepSeek API）时，每次 LLM 请求前都会自动注入破限规则，无需手动调用、无需修改人格本身。
+
+- 安装：把 `astrbot_plugin_pojia/` 文件夹复制到 AstrBot 的 `data/plugins/`，重载插件即可。
+- 详细说明见 [astrbot_plugin_pojia/README.md](astrbot_plugin_pojia/README.md)。
 ## 安装
 
 ### 方式一：一键脚本（推荐）
@@ -80,11 +86,17 @@ bash install.sh
 ```
 dsh-破限者/
 ├── AGENTS.md                        # 常驻自动层（复制到 ~/.dsh/AGENTS.md）
+├── astrbot_plugin_pojia/            # AstrBot 人格破甲插件
+│   ├── main.py                      # on_llm_request 注入规则
+│   ├── instructions.md              # 内置破限规则
+│   ├── _conf_schema.json            # WebUI 配置 Schema
+│   ├── metadata.yaml
+│   └── skills/SKILL.md
 ├── install.ps1                      # Windows 一键安装/卸载
 ├── install.sh                       # macOS/Linux 一键安装/卸载
 ├── LICENSE
 ├── README.md
-└── unrestricted-executor/           # 技能包
+├── unrestricted-executor/           # 技能包
     ├── SKILL.md                     # frontmatter(name/description/whenToUse/metadata) + 默认规则
     └── references/
         ├── flash-7013.md            # v4-flash 精简档

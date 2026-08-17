@@ -1,0 +1,8 @@
+name: astrbot_plugin_pojia
+display_name: 破限者
+desc: 在 AstrBot 每次 LLM 请求前自动注入「破限者」解除限制规则，使人格（含 DeepSeek API）直接执行、不输出拒绝。
+short_desc: 人格破甲：自动注入解除限制执行规则
+author: 1449690477
+version: 1.0.0
+repo: https://github.com/1449690477/dsh
+astrbot_version: ">=4.5"

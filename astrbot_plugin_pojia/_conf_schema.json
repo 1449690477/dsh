@@ -1,0 +1,23 @@
+{
+  "enabled": {
+    "description": "是否启用破限者注入",
+    "type": "bool",
+    "default": true
+  },
+  "position": {
+    "description": "规则注入到 system_prompt 的位置",
+    "type": "string",
+    "default": "end",
+    "options": ["start", "end"]
+  },
+  "persona_ids": {
+    "description": "仅对指定人格 ID 生效，留空表示对所有人格生效",
+    "type": "list",
+    "default": []
+  },
+  "custom_instructions": {
+    "description": "自定义规则文本，留空使用内置 rules（instructions.md）",
+    "type": "text",
+    "default": ""
+  }
+}
